@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+body {
+    font: 16px "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+}
+
+h2{
+    font-family: ProstoOne, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.base-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-black-navigate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 58px;
+    height: 58px;
+    background-color: black;
+    border-radius: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+
+.btn-black-navigate:hover {
+    background-color: #F05A00;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: #F05A00;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.btn:hover{
+    padding: 18px 32px;
+    transition: all .3s ease;
+
+}
+
+
+.arrow-circle-left, .arrow-circle-right, .arrow-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+.arrow-circle-left{
+    position: absolute;
+    left: 0;
+    top: 71%;
+    transform: translate(-90%, -50%);
+    z-index: 10;
+}
+.arrow-circle-right{
+    position: absolute;
+    right: 0;
+    top: 71%;
+    transform: translate(90%, -50%);
+    z-index: 10;
+}
